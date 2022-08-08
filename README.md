@@ -4,7 +4,7 @@ This is the repository for the multi-label classification tasks.
 # Directory tree
 Set directories as follows.
 
-Nervus (this repository)
+Nervus (this repository)  
 　└materials (make this directory when you use)  
 　　　└images (this directory has image files for CNN.)  
 　　　|　　└png_128  
