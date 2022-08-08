@@ -7,9 +7,9 @@ Set directories as follows.
 Nervus (this repository)  
 　　└materials (make this directory when you use)  
 　　　　└images (this directory has image files for CNN.)  
-　　　　|　　└png_128  
-　　　　|　　└AAA.png  
-　　　　|　　└BBB.png  
+　　　　｜　　└png_128  
+　　　　｜　　└AAA.png  
+　　　　｜　　└BBB.png  
 　　　　└splits  
 　　　　　 　└trial.csv  
 
