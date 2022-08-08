@@ -5,19 +5,19 @@ This is the repository for the multi-label classification tasks.
 Set directories as follows.
 
 Nervus (this repository)
-  └materials (make this directory when you use)
-    └images (this directory has image files for CNN.)
-    |  └png_128
-    |    └AAA.png
-    |    └BBB.png
-    └splits
-      └trial.csv
+  └materials (make this directory when you use)  
+    └images (this directory has image files for CNN.)  
+    |  └png_128  
+    |    └AAA.png  
+    |    └BBB.png  
+    └splits  
+      └trial.csv  
 
 - CSV (in this case trial.csv) must contain columns named `id_XXX`, `filepath`, `label_XXX`, and `split`. Detailed explanation is shown below.
 
 # Brief Usage
 ## Training phase
-`python train.py --task classification --csv_name trial.csv --model B6 --criterion CEL --optimizer RAdam --epochs 100 --batch_size 256 --augmentation trivialaugwide --input_channel 1 --save_weight best --gpu_ids 0,1,2`
+```python train.py --task classification --csv_name trial.csv --model B6 --criterion CEL --optimizer RAdam --epochs 100 --batch_size 256 --augmentation trivialaugwide --input_channel 1 --save_weight best --gpu_ids 0,1,2```
 
 - `task` determines your task. You can use classification or regression. When classification, you should use CEL as the `criterion` while, when regression, you should use MSE/rMSE/MAE as the `criterion`.
 - `csv_name` must be the csv name in the materials/splits directory. Details about this csv are shown in another section.
@@ -30,7 +30,7 @@ Nervus (this repository)
 - `save_weight` decides how often you save weights. Default is "best" which means the weight when the loss value is the lowest is saved. If `save_weight` is specified as "each", weights are saved each time the total loss decreases.
 
 ## Testing phase
-`python test.py --test_datetime yyyy-mm-dd-HH-MM-SS`
+```python test.py --test_datetime yyyy-mm-dd-HH-MM-SS```
 
 The directory of yyyy-mm-dd-HH-MM-SS will be made after training.
 
