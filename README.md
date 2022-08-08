@@ -5,13 +5,13 @@ This is the repository for the multi-label classification tasks.
 Set directories as follows.
 
 Nervus (this repository)
-  └materials (make this directory when you use)  
-    └images (this directory has image files for CNN.)  
-    |  └png_128  
-    |    └AAA.png  
-    |    └BBB.png  
-    └splits  
-      └trial.csv  
+　└materials (make this directory when you use)  
+　　　└images (this directory has image files for CNN.)  
+　　　|　　└png_128  
+　　　|　　└AAA.png  
+　　　|　　└BBB.png  
+　　　└splits  
+　　　　　 └trial.csv  
 
 - CSV (in this case trial.csv) must contain columns named `id_XXX`, `filepath`, `label_XXX`, and `split`. Detailed explanation is shown below.
 
